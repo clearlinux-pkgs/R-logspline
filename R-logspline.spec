@@ -4,7 +4,7 @@
 #
 Name     : R-logspline
 Version  : 2.1.12
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/logspline_2.1.12.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/logspline_2.1.12.tar.gz
 Summary  : Routines for Logspline Density Estimation
@@ -34,10 +34,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1549463778
+export SOURCE_DATE_EPOCH=1552767996
 
 %install
-export SOURCE_DATE_EPOCH=1549463778
+export SOURCE_DATE_EPOCH=1552767996
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -73,8 +73,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library logspline|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  logspline || :
 
 
 %files
@@ -98,7 +97,6 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/logspline/help/paths.rds
 /usr/lib64/R/library/logspline/html/00Index.html
 /usr/lib64/R/library/logspline/html/R.css
-/usr/lib64/R/library/logspline/libs/symbols.rds
 
 %files lib
 %defattr(-,root,root,-)
