@@ -4,7 +4,7 @@
 #
 Name     : R-logspline
 Version  : 2.1.14
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/logspline_2.1.14.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/logspline_2.1.14.tar.gz
 Summary  : Routines for Logspline Density Estimation
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : Apache-2.0
 Requires: R-logspline-lib = %{version}-%{release}
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 The function oldlogspline() uses the same algorithm as the logspline package
@@ -34,10 +35,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1570382203
+export SOURCE_DATE_EPOCH=1571857130
 
 %install
-export SOURCE_DATE_EPOCH=1570382203
+export SOURCE_DATE_EPOCH=1571857130
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
