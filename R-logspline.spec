@@ -4,7 +4,7 @@
 #
 Name     : R-logspline
 Version  : 2.1.16
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/logspline_2.1.16.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/logspline_2.1.16.tar.gz
 Summary  : Routines for Logspline Density Estimation
@@ -35,10 +35,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1589219931
+export SOURCE_DATE_EPOCH=1589826160
 
 %install
-export SOURCE_DATE_EPOCH=1589219931
+export SOURCE_DATE_EPOCH=1589826160
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
