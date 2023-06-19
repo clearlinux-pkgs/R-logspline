@@ -4,7 +4,7 @@
 #
 Name     : R-logspline
 Version  : 2.1.19
-Release  : 44
+Release  : 45
 URL      : https://cran.r-project.org/src/contrib/logspline_2.1.19.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/logspline_2.1.19.tar.gz
 Summary  : Routines for Logspline Density Estimation
